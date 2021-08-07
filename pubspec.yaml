@@ -23,13 +23,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
+
   # getx状态管理插件
   get: ^4.3.4
   # 屏幕适配插件
   flutter_screenutil: ^5.0.0+2
   # 网络请求
   dio: ^4.0.0
+  # svg图片
+  flutter_svg: ^0.22.0
+
 
 
   # The following adds the Cupertino Icons font to your application.
