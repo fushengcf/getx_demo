@@ -3,17 +3,6 @@ import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:getx_demo/utils/server.dart';
 
-import 'method.dart';
-
-/*
-  * http 操作类
-  *
-  * 手册
-  * https://github.com/flutterchina/dio/blob/master/README-ZH.md
-  *
-  * 从 3 升级到 4
-  * https://github.com/flutterchina/dio/blob/master/migration_to_4.x.md
-*/
 class ErrorEntity {
   int code;
   String message;
@@ -70,26 +59,12 @@ class HttpUtil {
       var response = await dio.request(
         path,
         queryParameters: params,
-        options: Options(method: MethodValues[method]),
+        options: Options(method: method),
       );
       print(response.toString());
       return response.data['data'];
     } on DioError catch (e) {
       // error(createErrorEntity(e));
     }
-  }
-
-  /// restful get 操作
-  Future get(
-    String path, {
-    dynamic queryParameters,
-    Options? options,
-  }) async {
-    var response = await dio.get(
-      path,
-      queryParameters: queryParameters,
-      options: options,
-    );
-    return response.data['data'];
   }
 }

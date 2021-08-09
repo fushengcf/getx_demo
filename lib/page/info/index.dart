@@ -42,6 +42,13 @@ class InfoView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: new Text("info"),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.cyan, Colors.blue, Colors.blueAccent],
+            ),
+          ),
+        ),
       ),
       body:
           // 显示

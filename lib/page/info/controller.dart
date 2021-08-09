@@ -10,11 +10,17 @@ class InfoController extends GetxController {
   void onInit() {
     super.onInit();
     print("onInit");
-    getPageList();
     // 每次
     ever(engravingPageList, (value) {
       print("ever -> " + value.toString());
     });
+  }
+
+  @override
+  void onReady() {
+    // TODO: implement onReady
+    super.onReady();
+    getPageList();
   }
 
   @override
