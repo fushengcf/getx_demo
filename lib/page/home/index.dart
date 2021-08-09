@@ -15,10 +15,13 @@ class HomePage extends StatelessWidget {
           title: new Text("home！2"),
           // backgroundColor: Colors.black,
           automaticallyImplyLeading: true),
-      body: Container(
-        child: ElevatedButton(
+      body: Column(children: [
+        ElevatedButton(
             onPressed: () => Get.toNamed('/info'), child: new Text('to info')),
-      ),
+        ElevatedButton(
+            onPressed: () => Get.toNamed('/test_home'),
+            child: new Text('测试首页')),
+      ]),
     );
   }
 }
