@@ -12,6 +12,9 @@ class SwiperView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(5.w)),
+          color: Colors.white),
       child: new Swiper(
         itemBuilder: (BuildContext context, int index) {
           return new ClipRRect(

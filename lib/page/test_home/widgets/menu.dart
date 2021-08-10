@@ -19,7 +19,7 @@ class MenuView extends StatelessWidget {
             new Container(
                 child: ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(5.w)),
-                  child: new Image.network(
+                  child: new Image.asset(
                     menus[i],
                     fit: BoxFit.fitWidth,
                     width: 96.w,
