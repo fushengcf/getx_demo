@@ -5,6 +5,7 @@ class MessageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        width: 362.w,
         decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.all(Radius.circular(5.w))),
@@ -80,11 +81,15 @@ class MessageView extends StatelessWidget {
                         ),
                         Container(
                           margin: EdgeInsets.only(left: 9.w),
-                          child: Text(
-                            "系统消息通知",
-                            style: TextStyle(fontSize: 12.w),
+                          width: 240.w,
+                          child: Flexible(
+                            child: Text(
+                                "系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知",
+                                style: TextStyle(fontSize: 12.w),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis),
                           ),
-                        )
+                        ),
                       ],
                     )
                   ],

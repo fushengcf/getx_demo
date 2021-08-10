@@ -11,9 +11,20 @@ class TESTHOME extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromARGB(245, 245, 245, 245),
+        backgroundColor: Color.fromRGBO(245, 245, 245, 1),
         body: SingleChildScrollView(
           child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Color.fromRGBO(132, 176, 98, 1),
+                  // Color.fromRGBO(245, 245, 245, 1),
+                  Color.fromRGBO(245, 245, 245, 1)
+                ],
+              ),
+            ),
             alignment: Alignment.center,
             child: Column(
               children: [
