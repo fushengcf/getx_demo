@@ -82,13 +82,11 @@ class MessageView extends StatelessWidget {
                         Container(
                           margin: EdgeInsets.only(left: 9.w),
                           width: 240.w,
-                          child: Flexible(
-                            child: Text(
-                                "系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知",
-                                style: TextStyle(fontSize: 12.w),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis),
-                          ),
+                          child: Text(
+                              "系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知系统消息通知",
+                              style: TextStyle(fontSize: 12.w),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis),
                         ),
                       ],
                     )
